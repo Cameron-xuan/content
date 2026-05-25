@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">WhisperX transcription workflow in Daytona</title>
+  <desc id="desc">A workflow diagram showing video input, Daytona workspace, Sapat conversion, WhisperX alignment, optional diarization, and review-ready transcript outputs.</desc>
+  <rect width="1200" height="520" fill="#f7fafc"/>
+  <g fill="#152238" font-family="Inter, Arial, sans-serif">
+    <text x="60" y="72" font-size="34" font-weight="700">WhisperX-backed Sapat workflow</text>
+    <text x="60" y="108" font-size="18">Run local, alignment-focused transcription from a reproducible Daytona workspace.</text>
+  </g>
+  <g stroke="#2b6cb0" stroke-width="3" fill="none">
+    <path d="M224 260 H348"/>
+    <path d="M512 260 H636"/>
+    <path d="M800 260 H924"/>
+    <path d="M985 216 V166 H1028"/>
+    <path d="M985 304 V354 H1028"/>
+  </g>
+  <g fill="#2b6cb0">
+    <path d="M348 260 l-16 -9 v18z"/>
+    <path d="M636 260 l-16 -9 v18z"/>
+    <path d="M924 260 l-16 -9 v18z"/>
+    <path d="M1028 166 l-16 -9 v18z"/>
+    <path d="M1028 354 l-16 -9 v18z"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#152238">
+    <g>
+      <rect x="60" y="182" width="164" height="156" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="88" y="242" font-size="21" font-weight="700">Video files</text>
+      <text x="88" y="276" font-size="15">MP4 meetings,</text>
+      <text x="88" y="298" font-size="15">lectures, demos</text>
+    </g>
+    <g>
+      <rect x="348" y="170" width="164" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="380" y="224" font-size="21" font-weight="700">Daytona</text>
+      <text x="380" y="254" font-size="15">Python workspace</text>
+      <text x="380" y="276" font-size="15">with ffmpeg and</text>
+      <text x="380" y="298" font-size="15">isolated env vars</text>
+    </g>
+    <g>
+      <rect x="636" y="170" width="164" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="668" y="224" font-size="21" font-weight="700">Sapat</text>
+      <text x="668" y="254" font-size="15">Converts video</text>
+      <text x="668" y="276" font-size="15">to MP3, then calls</text>
+      <text x="668" y="298" font-size="15">`--api whisperx`</text>
+    </g>
+    <g>
+      <rect x="924" y="170" width="164" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="950" y="224" font-size="21" font-weight="700">WhisperX</text>
+      <text x="950" y="254" font-size="15">ASR, alignment,</text>
+      <text x="950" y="276" font-size="15">optional speaker</text>
+      <text x="950" y="298" font-size="15">diarization</text>
+    </g>
+    <g>
+      <rect x="1028" y="116" width="112" height="100" rx="8" fill="#edf7ed" stroke="#9ae6b4"/>
+      <text x="1054" y="158" font-size="18" font-weight="700">TXT</text>
+      <text x="1054" y="182" font-size="14">Transcript</text>
+    </g>
+    <g>
+      <rect x="1028" y="304" width="112" height="100" rx="8" fill="#fff7ed" stroke="#fbd38d"/>
+      <text x="1050" y="346" font-size="18" font-weight="700">QA</text>
+      <text x="1050" y="370" font-size="14">Review pass</text>
+    </g>
+  </g>
+</svg>
